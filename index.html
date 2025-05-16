@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>食品工場向け衛生管理AIカメラ | 衛生ルール実施状況を24時間自動で記録化</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header, section, footer { padding: 20px; max-width: 800px; margin: auto; }
+    header { background: #004080; color: white; }
+    h1, h2, h3 { color: #004080; }
+    img { width: 100%; max-width: 600px; margin: 10px 0; }
+    .cta { background: #ffcc00; color: #000; padding: 15px; text-align: center; margin: 20px 0; font-weight: bold; }
+    .cta a { color: #000; text-decoration: none; }
+    footer { background: #f0f0f0; text-align: center; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+
+
+  <header style="
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background: url('{{ url_for('static', filename='images/header.png') }}') no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+">
+  <!-- テキストボックス -->
+  <div style="z-index: 2; padding: 20px; max-width: 1500px;">
+    <h1 style="
+      font-size: 2.9em;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(43, 161, 245, 0.9);
+    ">
+      HACCP対応AIカメラ
+    </h1>
+    <p style="
+      font-size: 1.4em;
+      margin-top: 20px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    ">
+      異物混入、衛生不備を防ぎ、HACCP対応もこれ1台。
+    </p>
+    <a href="#contact" style="
+      margin-top: 30px;
+      display: inline-block;
+      background-color: #ffcc00;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-size: 1.2em;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    ">
+      ▶ 無料オンライン相談を予約する
+    </a>
+  </div>
+</header>
+
+
+
+
+<section>
+  <h2>こんなお悩みありませんか？</h2>
+  <ul>
+    <li>作業員の衛生ルールが守られているか不安</li>
+    <li>監視に人手がかかりすぎている</li>
+    <li>HACCP対応で記録の義務が増えて困っている</li>
+  </ul>
+</section>
+
+
+<section>
+  <h2>AIカメラで解決できます</h2>
+  <img src="{{ url_for('static', filename='images/image.png') }}" alt="AIカメラ イメージ">
+
+
+  <ul>
+    <li>手洗い実施状況の記録</li>
+    <li>ローラー実施状況の記録</li>
+    <li>身だしなみチェックと記録</li>
+    <li>映像とログを自動保存＋レポート出力</li>
+  </ul>
+</section>
+
+
+<section>
+  <h2>導入メリット</h2>
+  <ul>
+    <li>異物混入リスクを最大80%低減</li>
+    <li>衛生管理の見える化</li>
+    <li>24時間365日稼働で負担軽減</li>
+    <li>HACCP対応：記録も自動化</li>
+  </ul>
+</section>
+
+
+<section>
+  <h2>導入事例：医薬品 A社様</h2>
+  <p>「AIカメラで管理者を月20時間工数削減、従業員の意識向上、顧客からの信頼向上」</p>
+  <img src="{{ url_for('static', filename='images/image.png') }}" alt="AIカメラ イメージ">
+
+
+</section>
+
+
+<section>
+  <h2>導入の流れ</h2>
+  <ol>
+    <li>無料相談のお申し込み</li>
+    <li>現場確認と最適提案</li>
+    <li>設置・稼働（2〜3週間）</li>
+    <li>初期トレーニング・運用開始</li>
+  </ol>
+</section>
+
+
+<section>
+  <h2>購入料金</h2>
+  <ul>
+    <li>AIカメラ単体： ¥349,900〜（1台）</li>
+    <li>AIカメラシステム：¥990,000〜（3台＋レポート機能）</li>
+  </ul>
+  <h2>レンタルプラン料金</h2>
+  <ul>
+    <li>ライトプラン：月額 ¥22,000〜（1台）</li>
+    <li>スタンダード：月額 ¥59,000〜（3台＋レポート機能）</li>
+  </ul>
+  <p>※初期費用・設置サポート無料キャンペーン中！</p>
+</section>
+
+
+<section>
+  <h2>よくあるご質問</h2>
+  <p><strong>Q. ネット環境がない場所でも使えますか？</strong><br>
+  → ローカル保存＋後日同期対応が可能です。</p>
+  <p><strong>Q. カスタマイズできますか？</strong><br>
+  → はい。現場のレイアウトやルールに合わせて対応します。</p>
+  <p><strong>Q. セキュリティは大丈夫ですか？</strong><br>
+  → 映像データは暗号化し、お客様の社内サーバーで管理できます。</p>
+</section>
+
+
+<section id="contact">
+  <h2>今すぐ無料相談・資料請求</h2>
+  <div class="cta"><a href="#">▶ 無料で相談する</a></div>
+  <p>📞 電話：0120-xxxx-xxx<br>📧 メール：support@example.com</p>
+</section>
+
+
+<footer>
+  &copy; 株式会社nanoFACTORY
+</footer>
+
+
+</body>
+</html>
